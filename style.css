@@ -1,0 +1,147 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: url(/travel_agency/images/mont_fuji.jpg);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  color: #000;
+}
+
+/* NAV */
+
+.nav {
+  width: 100vw;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+}
+
+.nav h1{
+  color: #f0f0f0;
+}
+
+.nav ul{
+  min-width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav li{
+  list-style: none;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.nav a:hover{
+  transform: scale(1.2);
+}
+
+.nav a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  /* color: #364f6b; */
+  color: #000;
+}
+
+/* CONTAINER */
+
+.container{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  width: 40%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.box h1{
+  font-size: 5rem;
+}
+
+.box p{
+  text-align: justify;
+}
+
+.box input[type=button]{
+  min-width: 5rem;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  background: rgba(255, 255, 255, 0);
+  transition: 500ms ease;
+}
+
+.box input[type=button]:hover{
+  cursor: pointer;
+  background: #ffffff;
+  transform: scale(1.1);
+}
+
+/* DESTINATIONS */
+
+#dest{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#dest h1{
+  font-size: 3rem;
+}
+
+.elements{
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 100px 50px;
+  border-radius: 20px;
+}
+
+.eachdest{
+  max-width: 30%;
+  min-height: 50px;
+
+}
+
+.eachdest img{
+  max-width: 100%;
+  border-radius: 20px;
+  transition: 500ms ease;
+}
+
+.eachdest img:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
