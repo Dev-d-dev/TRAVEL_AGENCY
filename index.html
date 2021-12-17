@@ -1,68 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel Agency</title>
-   <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  </head>
-  <body>
-
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Travel Agency</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#dest">Destinations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/6ddeaeb526.js" crossorigin="anonymous"></script>
+  <title>Travel Agency</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" id="logo"><i class="fas fa-plane"></i> Travel</a>
+      <ul class="nav-list">
+        <li><a href="#index.html">Home</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
-    
-    <!-- CONTENT -->
-    <div class="container-custom container-fluid p-5" id="home">
-      <div class="box" >
-        <h1>Mount Fuji</h1>
-        <p>Japan’s Mt. Fuji is an active volcano about 100 kilometers southwest of Tokyo. Commonly called “Fuji-san,” it’s the country’s tallest peak, at 3,776 meters. A pilgrimage site for centuries, it’s considered one of Japan’s 3 sacred mountains, and summit hikes remain a popular activity. Its iconic profile is the subject of numerous works of art, notably Edo Period prints by Hokusai and Hiroshige.</p>
-        <input class="btn btn-dark" type="button" value="Learn More">
-      </div>
-    </div>
-    
-    <!-- DESTINATIONS -->
-    <div class="container-fluid" id="dest">
-      <h1>Destinations</h1>
-      <div class="row">
-        <div class="col-md-4">
-          <img class="img-fluid img-custom" src="/images/travel_01.jpg" alt="">
-        </div>
-        <div class="col-md-4">
-          <img class="img-fluid img-custom" src="/images/travel_02.jpg" alt="">
-        </div>
-        <div class="col-md-4">
-          <img class="img-fluid img-custom" src="/images/travel_03.jpg" alt="">
-        </div>
-        
-      </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+    <div class="header-content">
+      <h1>Granada</h1>
+      <p>Discover Granada, and the beautiful Alhambra! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto soluta deserunt dolorem perspiciatis? Soluta ad, eius dolorem impedit aperiam sint maiores. Voluptatum nobis sit perferendis iure fugiat quisquam debitis consequatur.</p>
+      <button>More info</button>
+    </div>
+    
+  </header>
+
+<div id="packages">
+  <h1 class="packages-title">Packages</h1>
+  <section class="packages-cards">
+<!-- CARD -->
+    <div class="card">
+
+      <div class="price-tag">
+        <p>€ 150</p>
+      </div>
+<!-- CARD IMAGE-->
+      <img src="./images/granada.jpg" alt="">
+      <div class="card-content">
+        <h1>4 Nights in Granada</h1>
+        <ul>
+          <li><i class="fas fa-coffee"></i>Breakfest included</li>
+          <li><i class="fas fa-wifi"></i>Wifi</li>
+          <li><i class="fas fa-dumbbell"></i>Gym</li>
+        </ul>
+      </div>
+    </div>
+<!-- CARD -->
+    <div class="card">
+
+      <div class="price-tag">
+        <p>€ 300</p>
+      </div>
+<!-- CARD IMAGE-->
+      <img src="./images/barcelona.jpg" alt="">
+      <div class="card-content">
+        <h1>3 Nights in Barcelona</h1>
+        <ul>
+          <li><i class="fas fa-coffee"></i>Breakfest included</li>
+          <li><i class="fas fa-wifi"></i>Wifi</li>
+          <li><i class="fas fa-dumbbell"></i>Gym</li>
+        </ul>
+      </div>
+    </div>
+<!-- CARD -->
+    <div class="card">
+
+      <div class="price-tag">
+        <p>€ 200</p>
+      </div>
+<!-- CARD IMAGE-->
+      <img src="./images/madrid.jpg" alt="">
+
+      <div class="card-content">
+        <h1>5 Nights in Madrid</h1>
+        <ul>
+          <li><i class="fas fa-coffee"></i>Breakfest included</li>
+
+          <li><i class="fas fa-wifi"></i>Wifi</li>
+
+          <li><i class="fas fa-dumbbell"></i>Gym</li>
+
+          <li><i class="fas fa-car"></i>Parking</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+  
+</body>
 </html>
-
