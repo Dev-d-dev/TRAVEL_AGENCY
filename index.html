@@ -9,17 +9,19 @@
   <title>Travel Agency</title>
 </head>
 <body>
+  <!-- HEADER -->
   <header>
+    <!-- NAVBAR -->
     <nav>
       <a href="#" id="logo"><i class="fas fa-plane"></i> Travel</a>
       <ul class="nav-list">
         <li><a href="#index.html">Home</a></li>
         <li><a href="#packages">Packages</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-
+<!-- HEADER CONTENT -->
     <div class="header-content">
       <h1>Granada</h1>
       <p>Discover Granada, and the beautiful Alhambra! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto soluta deserunt dolorem perspiciatis? Soluta ad, eius dolorem impedit aperiam sint maiores. Voluptatum nobis sit perferendis iure fugiat quisquam debitis consequatur.</p>
@@ -28,8 +30,10 @@
     
   </header>
 
+<!-- PACKAGES -->
+
 <div id="packages">
-  <h1 class="packages-title">Packages</h1>
+  <h1 class="title">Packages</h1>
   <section class="packages-cards">
 <!-- CARD -->
     <div class="card">
@@ -89,6 +93,54 @@
     </div>
   </section>
 </div>
+
+<!-- SERVICES -->
+<section id="services">
+  <h1 class="title">Services</h1>
+  <div class="services-cards">
+    <div class="card">
+      <i class="fas fa-map"></i>
+      <h3>Guided Tours</h3>
+      <p>Labore iste voluptas suscipit deleniti obcaecati assumenda minima, quam sunt fugit quisquam doloremque!</p>
+      <button class="button info">More Info</button>
+    </div>
   
+    <div class="card">
+      <i class="fas fa-camera"></i>
+      <h3>Professional Photographer</h3>
+      <p>Labore iste voluptas suscipit deleniti obcaecati assumenda minima, quam sunt fugit quisquam doloremque!</p>
+      <button class="button info">More Info</button>
+    </div>
+  
+    <div class="card">
+      <i class="fas fa-car"></i>
+      <h3>Car Hire</h3>
+      <p>Labore iste voluptas suscipit deleniti obcaecati assumenda minima, quam sunt fugit quisquam doloremque!</p>
+      <button class="button info">More Info</button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-info">
+    <h1>Contact us</h1>
+    <ul>
+      <li><i class="fas fa-map-marker-alt"></i>100, Cypress Street</li>
+      <li><i class="fas fa-at"></i>contact@travel.com</li>
+      <li><i class="fas fa-phone"></i>(34)90000-0000</li>
+    </ul>
+  </div>
+  <div id="map"></div>
+</section>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button> 
+
+<script src="index.js"></script>
+<script
+      src="https://maps.googleapis.com/maps/api/js?&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+
 </body>
 </html>
